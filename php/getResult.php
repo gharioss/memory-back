@@ -1,9 +1,6 @@
 <?php
 
 require 'db.php';
-header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
-header("Access-Control-Allow-Headers: *");
 
 $result = [];
 $stmt = $pdo->query("SELECT results.id_user id_result, result, DATE_FORMAT(`date`, '%d/%m/%Y') as dateE, first_name, last_name
