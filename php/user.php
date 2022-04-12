@@ -1,5 +1,7 @@
 <?php
 header("Access-Control-Allow-Origin: https://memoryfrontjulie.herokuapp.com");
+header('HTTP/1.1 200');
+
 
 require 'db.php';
 require '../validate_jwt.php';
