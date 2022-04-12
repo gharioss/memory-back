@@ -1,5 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: https://memoryfrontjulie.herokuapp.com");
+header('Access-Control-Allow-Headers', 'AccountKey,x-requested-with, Content-Type, origin, authorization, accept, client-security-token, host, date, cookie, cookie2');
 header('HTTP/1.1 200');
 
 
