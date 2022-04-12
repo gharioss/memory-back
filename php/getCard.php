@@ -1,6 +1,9 @@
 <?php
 
 require 'db.php';
+header("Access-Control-Allow-Origin: https://memoryfrontjulie.herokuapp.com");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+header("Access-Control-Allow-Headers: *");
 
 $cards = [];
 $stmt = $pdo->query("SELECT * FROM cards");
