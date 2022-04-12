@@ -1,6 +1,8 @@
 <?php
+header("Access-Control-Allow-Origin: https://memoryfrontjulie.herokuapp.com/");
 
 require 'db.php';
+
 
 $result = [];
 $stmt = $pdo->query("SELECT results.id_user id_result, result, DATE_FORMAT(`date`, '%d/%m/%Y') as dateE, first_name, last_name
